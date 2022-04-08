@@ -63,7 +63,7 @@ i{
     transition: max-height 1.4s ease;
 }
 .accordion-body p{
-    Font-size: 18px;
+/*     Font-size: 18px; */
     /* padding-top: 1rem; */
     line-height: 1.6;
 }
