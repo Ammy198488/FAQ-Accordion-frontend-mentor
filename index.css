@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color:  hsl(273, 75%, 66%);  
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.accordion{
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-top: 4rem;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+.accordion-content{
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+.accordion-container{
+    margin: 40px 20px;
+}
+.accordion-container h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.accordion-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-head h4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: lighter;
+}
+.accordion-head h4:hover{
+    color:hsl(14, 88%, 65%);
+    cursor: grabbing;
+    font-weight: bold;
+}
+i{
+    color:hsl(14, 88%, 65%) ;
+}
+.accordion-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.accordion-body p{
+    Font-size: 12px;
+    /* padding-top: 1rem; */
+    line-height: 1.6;
+}
+.accordion-img .img-1{
+    position: relative;
+    top: 50px;
+    left: -70px;
+    width: 400px;
+}
+.accordion-img .img-3{
+    position: absolute;
+    top:38% ;
+    left: 12%;
+    width: 180px;
+}
+
+.accordion-content.active .accordion-body{
+    max-height: 300px;
+}
+.accordion-content.active i{
+    transform: rotate(180deg);
+}
+i{
+    transition: transform .2s .1s;
+}
+
+@keyframes animate{
+    0%{
+        transform: scaleY(0);
+    }
+}
+@media screen and (max-width: 768px){
+    .accordion{
+        /* height: 300px; */
+        width: 100%;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        overflow-x: visible;
+        /* margin-top: -50px; */
+    }
+    .accordion-container{
+        margin-top: -50%;
+        margin-bottom: 10px;
+    }
+    .accordion-container h1{
+        text-align:center;
+    }
+    .accordion-img .img-1{
+        width: 250px;
+        position: relative;
+        top: -110px;
+        left: 20%;
+    }
+    .accordion-img .img-3{
+       position: relative;
+       left: 20%;
+       top:-230px ;
+       width: 100px;
+    }
+    
+}
