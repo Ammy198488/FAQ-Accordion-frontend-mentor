@@ -1,4 +1,4 @@
-
+live link:https://ammy198488.github.io/FAQ-Accordion-frontend-mentor/index.html
 # Frontend Mentor - FAQ accordion card
 
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
